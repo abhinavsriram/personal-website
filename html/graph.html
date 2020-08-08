@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>
+        Graph (PageRank)
+    </title>
+    <link rel="stylesheet" type="text/css" href="./../css/graph.css">
+    <link rel="stylesheet" type="text/css" href="./../css/graphGrid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+</head>
+<!--–––––––––––––––––––––––––BODY–––––––––––––––––––––––––-->
+<body>
+<!--–––––––––––––––––––––––––HEADER–––––––––––––––––––––––––-->
+<div class="header">
+    <nav>
+        <div class="logo">
+            <a href="./home.html">ABHINAV SRIRAM</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="./../js/home.js"></script>
+</div>
+<!--–––––––––––––––––––––––––CUSTOM INFORMATION DIV–––––––––––––––––––––––––-->
+<div class="othello-grid">
+    <div class="main-title">
+        Graph (PageRank)
+    </div>
+    <div class="skills">
+        Algorithms // Data Structures // Java // JavaFX
+    </div>
+    <div class="description1">
+        <span class="heading">Introduction</span> <br><br>
+        <span class="sub-heading">Implementation of The Graph ADT</span> <br>
+        In computer science, a graph is an abstract data type that is meant to implement the concepts of directed graph and undirected graphs from the field of graph theory within mathematics.
+        A graph data structure consists of a finite (and possibly mutable) set of vertices (also called nodes or points),
+        together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+        These pairs are known as edges (also called links or lines), and for a directed graph are also known as arrows.
+        The vertices may be part of the graph structure, or may be external entities represented by integer indices or references.
+        A graph data structure may also associate to each edge some edge value, such as a symbolic label or a numeric attribute (cost, capacity, length, etc.) <br> <br>
+        In this project I implemented a Graph in Java using an Adjacency Matrix as the underlying data structure. Alternatively, an Edge List/Set or Adjacency List/Set
+        could have been used. Each implementation has its own tradeoffs and benefits in terms of varying big-O runtimes and I felt that in this situation, an Adjacency Matrix would
+        work best. <br> <br>
+        <span class="sub-heading">Prim-Jarnik Algorithm</span> <br>
+        Prim-Jarnik, can be used to be find Minimum Spanning Forests
+        (a generalization of Minimum Spanning Trees for unconnected graphs). A minimum spanning tree may be defined as the subset of edges of a connected,
+        edge-weighted undirected graph that connects all the vertices together, without any cycles and with the minimum possible total edge weight. Some of the important real-world applications
+        of this algorithm include network designs (telephone/cable), finding approximate solution to complex mathematical problems (NP-Hard) like the Travelling Salesman Problem, Cluster Analysis,
+        Real-time face tracking and verification (i.e. locating human faces in a video stream),
+        Protocols in computer science to avoid network cycles,
+        Entropy based image registration,
+        Max bottleneck paths,
+        Dithering (adding white noise to a digital recording in order to reduce distortion). <br><br>
+        <span class="sub-heading">PageRank Algorithm</span> <br>
+        PageRank is a link analysis algorithm and it assigns a numerical weighting to each element of a hyperlinked set of documents,
+        such as the World Wide Web, with the purpose of "measuring" its relative importance within the set.
+        The algorithm may be applied to any collection of entities with reciprocal quotations and references.
+        The numerical weight that it assigns to any given element E is referred to as the PageRank of E.
+        A PageRank results from a mathematical algorithm based on the webgraph, created by all World Wide Web pages as nodes and hyperlinks as edges,
+        taking into consideration authority hubs such as cnn.com or usa.gov. The rank value indicates an importance of a particular page.
+        A hyperlink to a page counts as a vote of support.
+        The PageRank of a page is defined recursively and depends on the number and PageRank metric of all pages that link to it ("incoming links").
+        A page that is linked to by many pages with high PageRank receives a high rank itself. <br><br>
+        My implementation of PageRank is performed directly on a graph that the user creates using the JavaFX GUI or through information supplied as a .txt file.
+        I use a damping factor of 0.85 and stop performing recursion after 100 cycles or when for each vertex v,
+        the absolute value of the difference between v’s pagerank in the previous round and v’s pagerank in the current round is less than or equal to 0.01.
+    </div>
+    <div class="description2">
+        <span class="heading">Using the GUI</span> <br><br>
+        <span class="sub-heading">Creating Graphs</span> <br>
+        For the most part, using the
+        visualizer is intuitive: to create a vertex, left-click. To create two vertices with an edge
+        between them, click and drag, landing either on another pre-existing vertex or on nothing
+        to create a new one. You can choose to add edges with a random weight, with the
+        distance between two vertices as the weight, or with custom weights that you give as input
+        to the visualizer. You can also load graphs from .txt files as demonstrated below.
+    </div>
+    <div class="image1">
+        <img src="graph1.gif" alt="Graph">
+    </div>
+    <div class="description3">
+        <span class="sub-heading">Less Intuitive Controls</span> <br>
+        • <span class="code">select a vertex v as v1</span>: left-click on the vertex <br>
+        • <span class="code">select a vertex v as v2</span>: shift + click on the vertex (or option-click for some computers) <br>
+        • <span class="code">remove a vertex and any incident edges</span>: right-click on the vertex <br>
+        • <span class="code">select an edge</span>: left-click on the edge <br>
+        • <span class="code">remove an edge</span>: right-click on the edge <br>
+        <br><br>
+        <span class="sub-heading">Buttons</span> <br>
+        • <span class="code">areAdjacent(v1, v2)</span>: returns a boolean value describing whether there is an edge
+        starting on v1 and ending on v2. This is the same for both directed and undirected
+        graphs. <br>
+        • <span class="code">connectingEdge(v1, v2)</span>: if the two selected vertices v1 and v2 are connected by
+        an edge, returns the edge. If the graph is directed, it should only return the edge if
+        there is an edge starting on v1 and ending on v2, or return null. <br>
+        • <span class="code">endVertices(e)</span>: returns the two endpoints of an edge e. The order in which the
+        vertices are returned is insignificant, regardless of whether the graph is directed or
+        undirected. <br>
+        • <span class="code">opposite(v1, e)</span>: returns the second endpoint of an edge e (that is: if you select a
+        vertex and a connected edge - this will return the other vertex attached to that edge).
+        This method works the same whether your graph is directed or undirected. <br>
+        • <span class="code">clear()</span>: clears the graph(s) on the visualizer <br>
+        • <span class="code">incomingEdges(v1)</span>: for an undirected graph, returns all edges attached to the selected vertex v1.
+        For a directed graph, it returns all edges that end on this vertex. <br>
+        • <span class="code">vertices()</span>: returns a list of all the vertices in the graphs on the visualizer. <br>
+        • <span class="code">edges()</span>: returns a list of all the edges in the graphs on the visualizer. <br>
+        • <span class="code">PageRank</span>: performs PageRank only on directed graphs. <br>
+        • <span class="code">Prim-Jarnik</span>: performs Prim-Jarnik only on undirected graphs. <br>
+        • <span class="code">Toggle Directed</span>: clears all existing graphs and ensures that all subsequent graphs are directed. <br>
+        • <span class="code">Save Graph</span>: saves the graph created on the visualizer as a .txt file. <br>
+        • <span class="code">Load Graphs</span>: creates a visualization of a .txt file as a graph. <br><br>
+        The clip below demonstrates how all of these functions work.
+    </div>
+    <div class="image2">
+        <img src="graph2.gif" alt="Graph">
+    </div>
+    <div class="description4">
+        <span class="heading">More Information</span> <br><br>
+        If you'd like a complete technical dossier on everything that went into building this project, click <a href="#">here</a>.
+    </div>
+</div>
+<!--–––––––––––––––––––––––––FOOTER–––––––––––––––––––––––––-->
+<div class="footer">
+    <div class="name">
+        © 2020 Abhinav Sriram.
+    </div>
+    <div class="contact">
+        <a href="mailto:abhinav_sriram@brown.edu">email</a> //
+        <a target="_blank" href="https://linkedin.com/in/abhinavsriram">linkedin</a> //
+        <a target="_blank" href="https://github.com/abhinavsriram">github</a>
+    </div>
+</div>
+</body>
+</html>

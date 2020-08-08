@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>
+        Othello
+    </title>
+    <link rel="stylesheet" type="text/css" href="./../css/othello.css">
+    <link rel="stylesheet" type="text/css" href="./../css/othelloGrid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+</head>
+<!--–––––––––––––––––––––––––BODY–––––––––––––––––––––––––-->
+<body>
+<!--–––––––––––––––––––––––––HEADER–––––––––––––––––––––––––-->
+<div class="header">
+    <nav>
+        <div class="logo">
+            <a href="./home.html">ABHINAV SRIRAM</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./work.html">Work</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="./../js/home.js"></script>
+</div>
+<!--–––––––––––––––––––––––––CUSTOM GAME INFORMATION DIV–––––––––––––––––––––––––-->
+<div class="othello-grid">
+    <div class="main-title">
+        Othello
+    </div>
+    <div class="skills">
+        Object-Oriented Design // Java // JavaFX // Artificial Intelligence
+    </div>
+    <div class="description1">
+        <span class="heading">Introduction</span> <br><br>
+        The game of Othello is played on an 8 by 8 grid of board spaces.
+        The game pieces (chips) are black on one side and white on the other.
+        Each player is assigned a color. They take turns placing tiles on the board with the player's color face up.
+        The object of the game is to have the most tiles of your color on the board when the game is over.
+        You can flip your opponent's tiles from their color to your color by "sandwiching" them. A valid move must sandwich at least one of your opponent’s tiles.
+    </div>
+    <div class="description2">
+        <span class="heading">How To Play</span> <br><br>
+        <span class="sub-heading">Human vs Human</span> <br>
+        As described in the introduction, the game is played by two players, each of whom is assigned a color - white or black.
+        The 2 players can choose their respective colors using the radio-buttons.
+        By default, the first turn goes to the player assigned white.
+        After the players choose their respective colors and hit Apply Settings, the game begins and the users will be met by the screen below.
+        The banner on top of the game board informs users of whose turn it is and the banner below the game board lets users know the
+        score (as determined by the number of pieces on the board).
+        To make things easier for human players, all possible valid moves are highlighted by gray squares.
+        If a user cannot make a valid move, their turn is automatically skipped and the banner on top of the game board indicates whose move it is.
+        If both players cannot make a valid move or if the board is full, the banner on top of the game board indicates that the game is over and the one below, indicates the winner.
+    </div>
+    <div class="image1">
+        <img src="./othelloHvH.gif" alt="Othello: Human vs Human">
+    </div>
+    <div class="description3">
+        <span class="sub-heading">Human vs Computer</span> <br>
+        The Human player chooses their color as usual and chooses their opponent to be the computer player of level 1, 2, or 3.
+        The game progresses as shown below. The computer player always makes their move with a small delay so that their moves are actually observable.
+    </div>
+    <div class="image2">
+        <img src="./othelloHvC.gif" alt="Othello: Human vs Human">
+    </div>
+    <div class="description4">
+        <span class="sub-heading">Computer vs Computer</span> <br>
+        Should you want to amuse yourself, you can choose both players to be computer players and watch them fight for the glory of being an Othello Champion.
+    </div>
+    <div class="image3">
+        <img src="./othello.gif" alt="Othello: Human vs Human">
+    </div>
+    <div class="description5">
+        <span class="heading">More Information</span> <br><br>
+        If you'd like a complete technical dossier on everything that went into building this project, click <a href="#">here</a>.
+    </div>
+</div>
+<!--–––––––––––––––––––––––––FOOTER–––––––––––––––––––––––––-->
+<div class="footer">
+    <div class="name">
+        © 2020 Abhinav Sriram.
+    </div>
+    <div class="contact">
+        <a href="mailto:abhinav_sriram@brown.edu">email</a> //
+        <a target="_blank" href="https://linkedin.com/in/abhinavsriram">linkedin</a> //
+        <a target="_blank" href="https://github.com/abhinavsriram">github</a>
+    </div>
+</div>
+</body>
+</html>
