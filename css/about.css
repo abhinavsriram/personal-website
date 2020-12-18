@@ -117,7 +117,7 @@ nav {
     transition: ease-in 200ms;
 }
 .innerText {
-    font-size: 15pt; 
+    font-size: 12pt; 
     color: #686868; 
     margin-right: 10%; 
     margin-left: 10%; 
@@ -215,7 +215,7 @@ nav {
         margin-right: 5%;
     }
     .innerText {
-        font-size: 13pt;
+        font-size: 12pt;
         letter-spacing: normal;
         margin-right: 5%; 
         margin-left: 5%; 
