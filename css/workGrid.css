@@ -14,7 +14,6 @@
 
 .project1 {
   grid-area: project1;
-  /*background: #e27d60;*/ /*To Help Visualize the Div*/
 }
 .project2 {
   grid-area: project2;
@@ -44,9 +43,24 @@
     "card-buttons"
     "card-description"
     "card-skills";
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   padding: 0.5em;
-  background: #fafafa;
+  border-style: dotted;
+  border-color: #686868;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-color: #fafafa;
+}
+
+.project-card:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+  background-color: #fafafa;
 }
 
 .card-image {
@@ -117,8 +131,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #fafafa;
-  border-color: #fafafa;
+  color: #686868;
+  border-color: #686868;
   transition: ease-in 200ms;
   outline: 0;
 }
@@ -168,7 +182,7 @@ input[type="button"].button-primary:focus {
   }
 }
 /*For Mobile Phones*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .work {
     display: grid;
     grid-template-rows: 23em 3em 23em 3em 23em 3em 23em 3em 23em 3em 23em 3em;
