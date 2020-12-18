@@ -90,7 +90,7 @@ nav {
 /*Styling for the Background of the Content Section*/
 .content {
     display: flex;
-    min-height: 70vh;
+    min-height: 60vh;
     grid-area: content;
     overflow: hidden;
     justify-content: center;
