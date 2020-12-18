@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ef9a9a;
+    background-color: #fafafa;
     overflow-x: hidden;
     font-family: "Playfair Display", serif;
 }
@@ -34,7 +34,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #ef9a9a;
+    background-color: #fafafa;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -111,30 +111,25 @@ nav {
 .footer {
     grid-area: footer;
     justify-content: center;
-    line-height: 90px;
+    line-height: 30px;
     font-family: "Raleway", sans-serif;
+    align-items: center;
+    text-align: center;
 }
-
 /*Properties for Copyright Information*/
 .name {
-    color: black;
-    float: left;
-    padding-top: 8px;
-    margin-left: 100px;
+    color: #505050;
     font-size: 14px;
 }
 /*Properties for all Contact Information in the Footer*/
 .contact {
+    color: #505050;
     font-size: 14px;
-    margin-right: 100px;
-    color: black;
-    float: right;
-    padding-top: 8px;
 }
 
 .contact a {
     text-align: center;
-    color: black;
+    color: #505050;
     text-decoration: none;
 }
 
@@ -167,7 +162,7 @@ nav {
         right: 0;
         height: 92vh;
         top: 8vh;
-        background-color: #ef9a9a;
+        background-color: #fafafa;
         display: flex;
         flex-direction: column;
         align-items: center;
