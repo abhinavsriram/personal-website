@@ -204,7 +204,7 @@ nav {
         display: block;
     }
     .content {
-        min-height: 90vh;
+        min-height: 70vh;
     }
     .contentText {
         font-size: 30px;
