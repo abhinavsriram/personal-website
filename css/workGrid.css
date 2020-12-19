@@ -45,12 +45,12 @@
     "card-skills";
   padding: 0.5em;
   border-style: dotted;
-  border-color: #686868;
-  -webkit-filter: blur(5px);
+  border-color: #c4c4c4;
+  /* -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(5px); */
   background-color: #fafafa;
 }
 
