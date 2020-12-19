@@ -100,7 +100,7 @@ nav {
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 30px;
     text-align: center;
     color: #505050;
@@ -129,6 +129,7 @@ nav {
     height: auto;
     padding: 0.75em;
     font-family: "Raleway", sans-serif;
+    margin-bottom: 2em;
 }
 .title {
     color: black;
@@ -295,13 +296,14 @@ nav {
         height: auto;
         padding: 0.4em;
         font-family: "Raleway", sans-serif;
+        margin-bottom: 3em;
     }
     .title {
         color: black;
         font-size: 10.5px;
         font-family: "Raleway", serif;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
     .location {
         color: #505050;
