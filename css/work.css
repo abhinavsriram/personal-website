@@ -220,7 +220,7 @@ nav {
     }
 }
 /*Tablet Screen Adjustments*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     body, html {
         overflow-x: hidden;
     }
@@ -250,7 +250,7 @@ nav {
         min-height: 80vh;
     }
     .contentText {
-        font-size: 30px;
+        font-size: 25px;
         font-family: "Raleway", sans-serif;
         letter-spacing: 1px;
         text-align: center;
@@ -261,7 +261,7 @@ nav {
         font-family: "Raleway", sans-serif;
         font-weight: lighter;
         letter-spacing: 1px;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         color: #505050;
         margin-bottom: 15px;
@@ -270,11 +270,11 @@ nav {
         font-family: "Raleway", sans-serif;
         font-weight: lighter;
         letter-spacing: 1px;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         color: #505050;
         margin-bottom: 15px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .innerText {
         font-size: 13pt;
