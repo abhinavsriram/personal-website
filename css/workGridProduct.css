@@ -159,7 +159,7 @@ input[type="button"].button-primary:focus {
 @media screen and (max-width: 1400px) {
   .work-product {
     display: grid;
-    grid-template-rows: 40em 5em 40em 5em;
+    grid-template-rows: 40em 6em 40em 6em;
     grid-template-columns: 1fr 40em 1fr;
     grid-template-areas:
       ". project1 ."
