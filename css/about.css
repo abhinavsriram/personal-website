@@ -178,7 +178,7 @@ nav {
     }
 }
 /*Tablet Screen Adjustments*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     body, html {
         overflow-x: hidden;
     }
