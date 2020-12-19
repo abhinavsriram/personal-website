@@ -113,6 +113,16 @@ nav {
     color: #505050;
     margin-bottom: 30px;
 }
+.contentText-3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    color: #505050;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
 .contentText a {
     text-decoration: underline;
     color: #686868;
@@ -198,6 +208,16 @@ nav {
         width: 50%;
         z-index: 1000;
     }
+    .contentText-3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 26px;
+        text-align: center;
+        color: #505050;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
 }
 /*Tablet Screen Adjustments*/
 @media screen and (max-width: 768px) {
@@ -245,6 +265,16 @@ nav {
         text-align: center;
         color: #505050;
         margin-bottom: 15px;
+    }
+    .contentText-3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 30px;
+        text-align: center;
+        color: #505050;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
     .innerText {
         font-size: 13pt;
@@ -311,7 +341,7 @@ nav {
         min-height: 80vh;
     }
     .contentText {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Raleway", sans-serif;
         letter-spacing: normal;
         text-align: center;
@@ -323,10 +353,20 @@ nav {
         font-family: "Raleway", sans-serif;
         font-weight: lighter;
         letter-spacing: 1px;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         color: #505050;
         margin-bottom: 15px;
+    }
+    .contentText-3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: center;
+        color: #505050;
+        margin-bottom: 15px;
+        margin-top: 5px;
     }
     .innerText {
         font-size: 12px;

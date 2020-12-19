@@ -1,0 +1,252 @@
+/*–––––––––––––––––––––––––WORK GRID–––––––––––––––––––––––––*/
+.work-product {
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  grid-template-rows: 40em 3em;
+  grid-template-columns: 1fr 40em 1fr 40em 1fr;
+  grid-template-areas:
+    ". project1 . project2 ."
+    ". . . . ."
+    /* ". project3 . project4 ."
+    ". . . . ."
+    ". project5 . project6 ."; */
+}
+
+.project1-product {
+  grid-area: project1;
+}
+.project2-product {
+  grid-area: project2;
+}
+/* .project3 {
+  grid-area: project3;
+}
+.project4 {
+  grid-area: project4;
+}
+.project5 {
+  grid-area: project5;
+}
+.project6 {
+  grid-area: project6;
+} */
+
+/*–––––––––––––––––––––––––INDIVIDUAL PROJECTS CARDS–––––––––––––––––––––––––*/
+.project-card-product {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 25em 3.5em 3em 7em 2em;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card-image"
+    "card-title"
+    "card-buttons"
+    "card-description"
+    "card-skills";
+  padding: 0.5em;
+  border-style: dotted;
+  border-color: #c4c4c4;
+  background-color: #fafafa;
+}
+
+.project-card:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+  background-color: #fafafa;
+}
+
+.card-image {
+  grid-area: card-image;
+  margin: auto;
+}
+/* weird visual bug */
+.brown-cp-mobile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.card-title {
+  margin: auto;
+  grid-area: card-title;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.card-description {
+  grid-area: card-description;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.card-skills {
+  grid-area: card-skills;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.card-buttons {
+  grid-area: card-buttons;
+  margin: auto;
+}
+
+/*–––––––––––––––––––––––––BUTTON (from open source css boilerplate - skeleton.css)–––––––––––––––––––––––––*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 33px;
+  padding: 0 10px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 10px;
+  line-height: 33px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #686868;
+  border-color: #686868;
+  transition: ease-in 200ms;
+  outline: 0;
+}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
+  background-color: #33c3f0;
+  border-color: #33c3f0;
+}
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #fff;
+  background-color: #1eaedb;
+  border-color: #1eaedb;
+}
+
+/*–––––––––––––––––––––––––MEDIA SCREEN ADAPTATION–––––––––––––––––––––––––*/
+@media screen and (max-width: 1400px) {
+  .work-product {
+    display: grid;
+    grid-template-rows: 40em 3em 40em 3em;
+    grid-template-columns: 1fr 40em 1fr;
+    grid-template-areas:
+      ". project1 ."
+      ". . ."
+      ". project2 ."
+      ". . .";
+      /* ". project3 ."
+      ". . ."
+      ". project4 ."
+      ". . ."
+      ". project5 ."
+      ". . ."
+      ". project6 ."
+      ". . ."; */
+  }
+}
+/*For Mobile Phones*/
+@media screen and (max-width: 1000px) {
+  .work-product {
+    display: grid;
+    grid-template-rows: 26em 3em 26em 3em;
+    grid-template-columns: 1fr 20em 1fr;
+    grid-template-areas:
+      ". project1 ."
+      ". . ."
+      ". project2 ."
+      ". . .";
+      /* ". project3 ."
+      ". . ."
+      ". project4 ."
+      ". . ."
+      ". project5 ."
+      ". . ."
+      ". project6 ."
+      ". . ."; */
+  }
+  .project-card-product {
+    display: grid;
+    grid-template-rows: 14em 2em 2em 8em 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card-image"
+      "card-title"
+      "card-buttons"
+      "card-description"
+      "card-skills";
+  }
+  .brown-cp-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .card-title {
+    grid-area: card-title;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .card-description {
+    grid-area: card-description;
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+  }
+  .card-skills {
+    grid-area: card-skills;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 7px;
+  }
+  .button {
+    font-size: 7px;
+    display: inline-block;
+    height: 25px;
+    padding: 0 10px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}
