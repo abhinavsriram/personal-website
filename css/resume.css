@@ -28,6 +28,12 @@ img {
             "footer";
 }
 /*–––––––––––––––––––––––––GRID COMPONENT 1 - HEADER–––––––––––––––––––––––––*/
+.resume-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 .header {
     grid-area: header;
 }

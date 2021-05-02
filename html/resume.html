@@ -36,19 +36,33 @@
 </div>
 <!--–––––––––––––––––––––––––CUSTOM RESUME DIVISION–––––––––––––––––––––––––-->
 <div class="resume-wrapper">
-    <br>
     <img src="./../assets/image/resume.png" alt="Please use the links below to access PDFs of my Resume and Transcript">
-    <iframe src="./../assets/pdf/abhinav_sriram_resume.pdf" width="600px" height="760px">
-        Please use the link below to download the PDF of my resume.
-    </iframe>
-    <div class="resume">
-        <br>
-        Download Links:
-        <a href="./../assets/pdf/abhinav_sriram_resume.pdf" download>Resume</a> //
-        <a href="./../assets/pdf/abhinav_sriram_transcript.pdf" download>Transcript</a>
-    </div>
-    <br>
+    <div id="adobe-dc-view" style="width: 600px; height: 760px"></div>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function () {
+            var adobeDCView = new AdobeDC.View({
+                clientId: "e3174733ca104078b0c02f1bf15419f3",
+                divId: "adobe-dc-view"
+            });
+            adobeDCView.previewFile({
+                content: { location: { url: "./../assets/pdf/abhinav_sriram_resume.pdf" } },
+                metaData: { fileName: "Abhinav Sriram's Resume" }
+            }, {
+                embedMode: "IN_LINE",
+                showDownloadPDF: false,
+                showPrintPDF: false
+            });
+        });
+    </script>
 </div>
+<div class="resume">
+    <br>
+    Download Links:
+    <a href="./../assets/pdf/abhinav_sriram_resume.pdf" download>Resume</a> //
+    <a href="./../assets/pdf/abhinav_sriram_transcript.pdf" download>Transcript</a>
+</div>
+<br>
 <!--–––––––––––––––––––––––––FOOTER–––––––––––––––––––––––––-->
 <div class="footer">
     <div class="name">
