@@ -227,7 +227,7 @@ input[type="button"].button-primary:focus {
   .card-description {
     grid-area: card-description;
     font-family: "Raleway", sans-serif;
-    font-size: 10px;
+    font-size: 8px;
   }
   .card-skills {
     grid-area: card-skills;
