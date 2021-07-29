@@ -215,13 +215,19 @@ nav {
         margin-right: 5%;
     }
     .innerText {
-        font-size: 12pt;
+        font-size: 11pt;
         letter-spacing: normal;
         margin-right: 5%; 
         margin-left: 5%; 
         text-align: left;
         margin-top: 6%;
         margin-bottom: 6%;
+    }
+    .my-image-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
     }
 }
 
