@@ -178,7 +178,7 @@ nav {
     }
 }
 /*Tablet Screen Adjustments*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     body, html {
         overflow-x: hidden;
     }
@@ -204,7 +204,55 @@ nav {
         display: block;
     }
     .content {
-        min-height: 70vh;
+        min-height: 74vh;
+    }
+    .contentText {
+        font-size: 30px;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: normal;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .innerText {
+        font-size: 12pt;
+        letter-spacing: normal;
+        margin-right: 5%; 
+        margin-left: 5%; 
+        text-align: left;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+}
+
+/*Tablet Screen Adjustments*/
+@media screen and (max-width: 428px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    .logo {
+        margin-left: 0.25em;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    .content {
+        min-height: 74vh;
     }
     .contentText {
         font-size: 30px;
