@@ -177,6 +177,7 @@ nav {
         width: 50%;
     }
 }
+
 /*Tablet Screen Adjustments*/
 @media screen and (max-width: 768px) {
     body, html {
@@ -225,7 +226,7 @@ nav {
     }
 }
 
-/*Tablet Screen Adjustments*/
+/*Mobile Screen Adjustments (iPhone 12 Pro Max)*/
 @media screen and (max-width: 430px) {
     body, html {
         overflow-x: hidden;
@@ -279,7 +280,7 @@ nav {
     }
 }
 
-/*Mobile Screen Adjustments*/
+/*Mobile Screen Adjustments (Most Phones)*/
 @media screen and (max-width: 420px) {
     body, html {
         overflow-x: hidden;
