@@ -95,12 +95,16 @@ nav {
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 /*Styling for the Text of the Content Section*/
 .contentText {
     font-family: "Raleway", sans-serif;
     letter-spacing: normal;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin-left: 4%;
     margin-right: 4%;
@@ -205,10 +209,15 @@ nav {
         display: block;
     }
     .content {
+        display: flex;
         min-height: 74vh;
+        grid-area: content;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
     .contentText {
-        font-size: 30px;
+        font-size: 24px;
         font-family: "Raleway", sans-serif;
         letter-spacing: normal;
         text-align: center;
@@ -253,10 +262,15 @@ nav {
         display: block;
     }
     .content {
+        display: flex;
         min-height: 82vh;
+        grid-area: content;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
     .contentText {
-        font-size: 30px;
+        font-size: 24px;
         font-family: "Raleway", sans-serif;
         letter-spacing: normal;
         text-align: center;
@@ -304,7 +318,12 @@ nav {
         display: block;
     }
     .content {
+        display: flex;
         min-height: 74vh;
+        grid-area: content;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
     .contentText {
         font-size: 16px;
