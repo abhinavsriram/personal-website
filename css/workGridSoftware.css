@@ -239,15 +239,15 @@ input[type="button"].button-primary:focus {
     font-size: 6px;
   }
   .button {
-    font-size: 7px;
+    font-size: 6px;
     display: inline-block;
-    height: 25px;
+    height: 20px;
     padding: 0 10px;
     color: black;
     font-family: "Raleway", sans-serif;
     text-align: center;
-    line-height: 25px;
-    letter-spacing: 0.1rem;
+    line-height: 20px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
