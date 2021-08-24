@@ -84,17 +84,20 @@
 .card-description {
   grid-area: card-description;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  color: #686868; 
 }
 .card-skills {
   grid-area: card-skills;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 10px;
+  color: #686868; 
 }
 .card-buttons {
   grid-area: card-buttons;
   margin: auto;
+  color: #686868; 
 }
 
 /*–––––––––––––––––––––––––BUTTON (from open source css boilerplate - skeleton.css)–––––––––––––––––––––––––*/
@@ -232,8 +235,8 @@ input[type="button"].button-primary:focus {
   .card-skills {
     grid-area: card-skills;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 7px;
+    letter-spacing: 1px;
+    font-size: 6px;
   }
   .button {
     font-size: 7px;

@@ -35,7 +35,7 @@
 .project-card-product {
   align-items: center;
   display: grid;
-  grid-template-rows: 25em 3.5em 3em 10em 2em;
+  grid-template-rows: 25em 3.5em 3em 8em 2em;
   grid-template-columns: 1fr;
   grid-template-areas:
     "card-image"
@@ -79,17 +79,19 @@
 .card-description {
   grid-area: card-description;
   font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 .card-skills {
   grid-area: card-skills;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 10px;
+  color: #686868; 
 }
 .card-buttons {
   grid-area: card-buttons;
   margin: auto;
+  color: #686868; 
 }
 
 /*–––––––––––––––––––––––––BUTTON (from open source css boilerplate - skeleton.css)–––––––––––––––––––––––––*/
@@ -223,12 +225,13 @@ input[type="button"].button-primary:focus {
     grid-area: card-description;
     font-family: "Raleway", sans-serif;
     font-size: 8px;
+    color: #686868; 
   }
   .card-skills {
     grid-area: card-skills;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 7px;
+    letter-spacing: 1px;
+    font-size: 6px;
   }
   .button {
     font-size: 7px;

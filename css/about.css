@@ -97,8 +97,8 @@ nav {
     align-items: center;
     padding-right: 100px;
     padding-left: 100px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
 /*Styling for the Text of the Content Section*/
 .contentText {
@@ -121,7 +121,7 @@ nav {
     transition: ease-in 200ms;
 }
 .innerText {
-    font-size: 12pt; 
+    font-size: 10pt; 
     color: #686868; 
     margin-right: 10%; 
     margin-left: 10%; 
@@ -215,6 +215,10 @@ nav {
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .contentText {
         font-size: 24px;
@@ -225,7 +229,7 @@ nav {
         margin-right: 5%;
     }
     .innerText {
-        font-size: 12pt;
+        font-size: 10pt;
         letter-spacing: normal;
         margin-right: 5%; 
         margin-left: 5%; 
@@ -268,9 +272,13 @@ nav {
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .contentText {
-        font-size: 24px;
+        font-size: 20px;
         font-family: "Raleway", sans-serif;
         letter-spacing: normal;
         text-align: center;
@@ -278,7 +286,7 @@ nav {
         margin-right: 5%;
     }
     .innerText {
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: normal;
         margin-right: 5%; 
         margin-left: 5%; 
@@ -324,9 +332,13 @@ nav {
         overflow: hidden;
         justify-content: center;
         align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .contentText {
-        font-size: 16px;
+        font-size: 14px;
         font-family: "Raleway", sans-serif;
         letter-spacing: normal;
         text-align: center;
@@ -334,7 +346,7 @@ nav {
         margin-right: 1%;
     }
     .innerText {
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: normal;
         margin-right: 5%; 
         margin-left: 5%; 
