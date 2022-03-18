@@ -216,7 +216,7 @@ nav {
 /*Adjustments to Ensure Content Does Not Overlap*/
 @media screen and (max-width: 1024px) {
     .logo {
-        margin-left: 1em;
+        margin-left: 0.25em;
     }
     .nav-links {
         display: flex;
@@ -241,7 +241,7 @@ nav {
         overflow-x: hidden;
     }
     .logo {
-        margin-left: 1em;
+        margin-left: 0.25em;
     }
     .nav-links{
         position: absolute;
