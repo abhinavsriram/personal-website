@@ -97,8 +97,8 @@ nav {
     align-items: center;
     padding-right: 100px;
     padding-left: 100px;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 175px;
+    padding-bottom: 175px;
 }
 /*Styling for the Text of the Content Section*/
 .contentText {
@@ -121,10 +121,10 @@ nav {
     transition: ease-in 200ms;
 }
 .innerText {
-    font-size: 10pt; 
-    color: #686868; 
-    margin-right: 10%; 
-    margin-left: 10%; 
+    font-size: 10pt;
+    color: #686868;
+    margin-right: 10%;
+    margin-left: 10%;
     text-align: justify;
 }
 /* Styling and Properties For My Picture */
@@ -231,8 +231,8 @@ nav {
     .innerText {
         font-size: 10pt;
         letter-spacing: normal;
-        margin-right: 5%; 
-        margin-left: 5%; 
+        margin-right: 5%;
+        margin-left: 5%;
         text-align: left;
         margin-top: 6%;
         margin-bottom: 6%;
@@ -288,8 +288,8 @@ nav {
     .innerText {
         font-size: 10px;
         letter-spacing: normal;
-        margin-right: 5%; 
-        margin-left: 5%; 
+        margin-right: 5%;
+        margin-left: 5%;
         text-align: left;
         margin-top: 6%;
         margin-bottom: 6%;
@@ -348,8 +348,8 @@ nav {
     .innerText {
         font-size: 10px;
         letter-spacing: normal;
-        margin-right: 5%; 
-        margin-left: 5%; 
+        margin-right: 5%;
+        margin-left: 5%;
         text-align: left;
         margin-top: 9%;
         margin-bottom: 9%;
